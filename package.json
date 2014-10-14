@@ -1,0 +1,37 @@
+{
+  "name": "split-keys",
+  "version": "0.0.0",
+  "description": "For each comma-separated key in object create a separate property.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dfcreative/split-keys"
+  },
+  "keywords": [
+    "unalias",
+    "split-keys",
+    "object",
+    "keys",
+    "properties",
+    "declaration",
+    "alias",
+    "flatten-keys",
+    "csv"
+  ],
+  "author": "Deemr",
+  "license": "unlicense",
+  "bugs": {
+    "url": "https://github.com/dfcreative/split-keys/issues"
+  },
+  "homepage": "https://github.com/dfcreative/split-keys",
+  "dependencies": {
+    "is-object": "~1.0.1",
+    "extend": "~2.0.0"
+  }
+}
