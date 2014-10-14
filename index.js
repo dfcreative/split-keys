@@ -16,7 +16,7 @@ module.exports = splitKeys;
  */
 function splitKeys(obj, deep, separator){
 	//swap args, if needed
-	if (deep !== undefined && type.isBoolean(separator) || type.isString(deep) || type.isRegExp(deep)) {
+	if ((deep || separator) && (type.isBoolean(separator) || type.isString(deep) || type.isRegExp(deep))) {
 		var tmp = deep;
 		deep = separator;
 		separator = tmp;
