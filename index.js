@@ -1,4 +1,4 @@
-var isObject = require('is-object');
+var type = require('mutypes');
 var extend = require('extend');
 
 module.exports = splitKeys;
@@ -7,7 +7,7 @@ module.exports = splitKeys;
 /**
  * Disentangle listed keys
  *
- * @param {object} set An object with key including listed declarations
+ * @param {Object} obj An object with key including listed declarations
  * @example {'a,b,c': 1}
  *
  * @param {boolean} deep Whether to flatten nested objects
@@ -15,6 +15,13 @@ module.exports = splitKeys;
  * @return {oblect} Source set passed {@link set}
  */
 function splitKeys(obj, deep, separator){
+	//swap args, if needed
+	if (deep !== undefined && type.isBoolean(separator) || type.isString(deep) || type.isRegExp(deep)) {
+		var tmp = deep;
+		deep = separator;
+		separator = tmp;
+	}
+
 	//ensure separator
 	separator = separator === undefined ? splitKeys.separator : separator;
 
@@ -23,7 +30,7 @@ function splitKeys(obj, deep, separator){
 	for(var keys in obj){
 		value = obj[keys];
 
-		if (deep && isObject(value)) splitKeys(value, deep, separator);
+		if (deep && type.isObject(value)) splitKeys(value, deep, separator);
 
 		list = keys.split(separator);
 
@@ -35,7 +42,7 @@ function splitKeys(obj, deep, separator){
 
 	function setKey(key){
 		//if existing key - extend, if possible
-		if (value !== obj[key] && isObject(value) && isObject(obj[key])) {
+		if (value !== obj[key] && type.isObject(value) && type.isObject(obj[key])) {
 			obj[key] = extend({}, obj[key], value);
 		}
 		//or replace

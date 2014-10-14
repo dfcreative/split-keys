@@ -22,7 +22,7 @@
     "declaration",
     "alias",
     "flatten-keys",
-    "csv"
+    "CSV"
   ],
   "author": "Deemr",
   "license": "unlicense",
@@ -31,7 +31,7 @@
   },
   "homepage": "https://github.com/dfcreative/split-keys",
   "dependencies": {
-    "is-object": "~1.0.1",
-    "extend": "~2.0.0"
+    "extend": "~2.0.0",
+    "mutypes": "~0.2.*"
   }
 }

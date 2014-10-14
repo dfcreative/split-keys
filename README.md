@@ -40,8 +40,15 @@ var obj = splitKeys({
 	'a, b': function(){}
 });
 
-
 obj.a === obj.b //true
 ```
 
-#### `splitKeys(object, deep?=true, separator?=',')`
+## API
+
+* `splitKeys(object)` — split comma-separated properties
+
+* `splitKeys(object, deep)` — split comma-separated properties, including inner objects
+
+* `splitKeys(object, separator)` — apply custom separator to split. Separator can be whether a string or a RegExp.
+
+* `splitKeys(object, separator, deep)` or `splitKeys(object, deep, separator)`  — apply custom separator to deep split keys
