@@ -1,6 +1,7 @@
-# SplitKeys
+# Split Keys
 
-For each comma-separated key in object create a separate property. That way you can gracefully declarare objects:
+For each comma-separated key in object create a separate property.
+Now you can gracefully declare objects.
 
 Before:
 
@@ -11,12 +12,15 @@ var a = {
 		b: 1
 	}
 };
+
+//create alias
 a.y = a.x;
 ```
 
 After:
 
 ```js
+//alias is comma-separated
 var a = splitKeys({
 	'x, y': {
 		a: 1,
