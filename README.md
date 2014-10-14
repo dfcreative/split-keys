@@ -1,6 +1,6 @@
 # SplitKeys
 
-For each comma-separated key on object create property. That way you can gracefully declarare objects:
+For each comma-separated key in object create a separate property. That way you can gracefully declarare objects:
 
 Before:
 
