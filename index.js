@@ -42,6 +42,7 @@ function splitKeys(obj, deep, separator){
 
 	function setKey(key){
 		//if existing key - extend, if possible
+		//FIXME: obj[key] might be not an object, but function, for example
 		if (value !== obj[key] && type.isObject(value) && type.isObject(obj[key])) {
 			obj[key] = extend({}, obj[key], value);
 		}

@@ -22,7 +22,8 @@
     "declaration",
     "alias",
     "flatten-keys",
-    "CSV"
+    "CSV",
+    "self-reference"
   ],
   "author": "Deemr",
   "license": "unlicense",

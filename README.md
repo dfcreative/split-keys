@@ -1,7 +1,7 @@
 # Split Keys
 
-For each comma-separated key in object create a separate property.
-Now you can gracefully declare objects.
+Gracefully declare properties aliases within objects.
+Split-keys splits comma-separated keys in object and for each key creates property alias.
 
 Before:
 
@@ -20,7 +20,7 @@ a.y = a.x;
 After:
 
 ```js
-//alias is comma-separated
+//declare list of aliases
 var a = splitKeys({
 	'x, y': {
 		a: 1,
@@ -28,6 +28,7 @@ var a = splitKeys({
 	}
 });
 ```
+
 
 ## Use
 
