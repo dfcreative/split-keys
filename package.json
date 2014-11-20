@@ -33,6 +33,6 @@
   "homepage": "https://github.com/dfcreative/split-keys",
   "dependencies": {
     "extend": "~2.0.0",
-    "mutypes": "~0.2.*"
+    "mutype": "~0.x"
   }
 }

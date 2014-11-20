@@ -1,4 +1,4 @@
-var type = require('mutypes');
+var type = require('mutype');
 var extend = require('extend');
 
 module.exports = splitKeys;
@@ -11,6 +11,8 @@ module.exports = splitKeys;
  * @example {'a,b,c': 1}
  *
  * @param {boolean} deep Whether to flatten nested objects
+ *
+ * @todo Think to provide such method on object prototype
  *
  * @return {oblect} Source set passed {@link set}
  */
