@@ -32,7 +32,7 @@
   },
   "homepage": "https://github.com/dfcreative/split-keys",
   "dependencies": {
-    "extend": "~2.0.0",
-    "mutype": "~0.x"
+    "xtend": "*",
+    "mutype": ">=0.x"
   }
 }

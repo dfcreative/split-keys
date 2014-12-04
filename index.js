@@ -1,5 +1,5 @@
 var type = require('mutype');
-var extend = require('extend');
+var extend = require('xtend/mutable');
 
 module.exports = splitKeys;
 
