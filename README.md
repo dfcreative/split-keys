@@ -1,4 +1,4 @@
-# Split Keys [![Build Status](https://travis-ci.org/dfcreative/split-keys.svg?branch=master)](https://travis-ci.org/dfcreative/split-keys)
+# Split Keys [![Build Status](https://travis-ci.org/dfcreative/split-keys.svg?branch=master)](https://travis-ci.org/dfcreative/split-keys) <a href="http://unlicense.org/UNLICENSE"><img src="http://upload.wikimedia.org/wikipedia/commons/6/62/PD-icon.svg" width="20"/></a>
 
 Gracefully declare properties aliases within objects.
 Split-keys splits comma-separated keys in object and for each key creates property alias.
