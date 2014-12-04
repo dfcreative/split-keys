@@ -1,4 +1,4 @@
-# Split Keys
+# Split Keys [![Build Status](https://travis-ci.org/dfcreative/split-keys.svg?branch=master)](https://travis-ci.org/dfcreative/split-keys)
 
 Gracefully declare properties aliases within objects.
 Split-keys splits comma-separated keys in object and for each key creates property alias.
@@ -53,3 +53,5 @@ obj.a === obj.b //true
 * `splitKeys(object, separator)` — apply custom separator to split. Separator can be whether a string or a RegExp.
 
 * `splitKeys(object, separator, deep)` or `splitKeys(object, deep, separator)`  — apply custom separator to deep split keys
+
+[![NPM](https://nodei.co/npm/split-keys.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/split-keys/)
